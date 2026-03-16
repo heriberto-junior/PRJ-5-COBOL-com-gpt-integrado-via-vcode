@@ -4,8 +4,10 @@
        ENVIRONMENT DIVISION.
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
-           SELECT CARTAO-INFILE ASSIGN TO "cartoes.txt".
-           SELECT RELATORIO-OUTFILE ASSIGN TO "relatorio.txt".
+           SELECT CARTAO-INFILE    ASSIGN TO "cartoes.txt"
+               ORGANIZATION IS LINE SEQUENTIAL.
+           SELECT RELATORIO-OUTFILE ASSIGN TO "relatorio.txt"
+               ORGANIZATION IS LINE SEQUENTIAL.
        
        DATA DIVISION.
        FILE SECTION.
