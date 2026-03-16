@@ -1,0 +1,26 @@
+name: Teste Cobol GNU
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      - name: Instalar Cobol GNU
+        run: sudo apt-get update && sudo apt-get install -y open-cobol
+
+      - name: Compilar programa
+        run: cobc -x cartoes.cbl
+
+      - name: Executar programa
+        run: ./cartoes < cartoes.txt > relatorio.txt
+
+      - name: Verificar saída
+        run: cat relatorio.txt
