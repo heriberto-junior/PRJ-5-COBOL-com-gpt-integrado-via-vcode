@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Instalar Cobol GNU
-        run: sudo apt-get update && sudo apt-get install -y open-cobol
+        run: sudo apt-get update && sudo apt-get install -y gnucobol4
 
       - name: Compilar programa
         run: cobc -x cartoes.cbl
