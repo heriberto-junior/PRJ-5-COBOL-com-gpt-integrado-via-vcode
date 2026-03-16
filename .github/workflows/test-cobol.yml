@@ -19,6 +19,9 @@ jobs:
       - name: Compilar programa
         run: cobc -x cartoes.cbl
 
+      - name: Verificar versão do Cobol
+        run: cobc --version
+
       - name: Limpar arquivo de saída anterior
         run: rm -f relatorio.txt
 
@@ -27,6 +30,3 @@ jobs:
 
       - name: Verificar saída
         run: cat relatorio.txt
-
-      - name: Verificar versão do Cobol
-        run: cobc --version
