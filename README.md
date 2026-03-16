@@ -8,6 +8,9 @@ Este projeto simula o processamento de cartões em lote usando Cobol GNU.
  - `cartoes.txt`: Arquivo de entrada com dados dos cartões
  - `relatorio.txt`: Arquivo de saída com resultados do processamento
 
+## Funcionamento
+O programa lê o arquivo `cartoes.txt`, processa cada cartão (aprovando se o valor for maior que zero, rejeitando caso contrário) e gera um relatório em `relatorio.txt`.
+
 ## Formato do arquivo de entrada (`cartoes.txt`)
 Cada linha representa um cartão:
 
@@ -31,7 +34,7 @@ Exemplo:
    ```
 
 ## Testes automatizados
-Para integração com GitHub Actions, crie scripts de teste e workflows para validar o processamento.
+O projeto possui um workflow GitHub Actions para compilar e testar automaticamente o programa com o compilador gnucobol4.
 # Simulador de Processamento Batch de Cartões
 
 Este projeto simula o processamento de cartões em lote usando Cobol GNU.
