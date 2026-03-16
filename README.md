@@ -23,18 +23,7 @@ Exemplo:
 23456 MARIA 500 R
 ```
 
-## Como executar
-1. Compile o programa:
-   ```
-   cobc -x cartoes.cbl
-   ```
-2. Execute:
-   ```
-   ./cartoes
-   ```
 
-## Testes automatizados
-O projeto possui um workflow GitHub Actions para compilar e testar automaticamente o programa com o compilador gnucobol4.
 # Simulador de Processamento Batch de Cartões
 
 Este projeto simula o processamento de cartões em lote usando Cobol GNU.
