@@ -36,8 +36,11 @@
                        ELSE
                            MOVE 'REJEITADO' TO PROCESSADO-STATUS
                        END-IF
-                       STRING CARTAO-NUMERO ' ' CARTAO-NOME ' ' CARTAO-VALOR ' ' PROCESSADO-STATUS
-                           DELIMITED BY SIZE INTO RELATORIO-REGISTRO
+                       STRING CARTAO-NUMERO ' '
+                              CARTAO-NOME ' '
+                              CARTAO-VALOR ' '
+                              PROCESSADO-STATUS
+                              DELIMITED BY SIZE INTO RELATORIO-REGISTRO
                        WRITE RELATORIO-REGISTRO
                END-READ
            END-PERFORM
